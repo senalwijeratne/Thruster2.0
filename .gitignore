@@ -1,2 +1,13 @@
+/ThrusterV2/nbproject/private/
 /ThrusterV2/build/
+/ThrusterV2/nbbuild/
 /ThrusterV2/dist/
+/ThrusterV2/nbdist/
+/ThrusterV2/nbactions.xml
+/ThrusterV2/nb-configuration.xml
+
+*.class
+
+*.jar
+*.war
+*.ear
