@@ -84,7 +84,9 @@ public class ProductInformationController extends HttpServlet {
             
             forward = VIEW_PRODUCTS;
             request.setAttribute("allProductInfo", dao.getAllProductInformation());
-            
+        
+
+        //TOGGLES THE VISIBILITY    
         }
 
         RequestDispatcher view = request.getRequestDispatcher(forward);

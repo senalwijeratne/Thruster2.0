@@ -54,6 +54,7 @@ public class ProductInformationDao {
                 product_information.setInStock(rs.getInt("inStock"));
                 product_information.setCreatedDate(rs.getDate("createdDate"));
                 product_information.setLastEdited(rs.getDate("lastEdited"));
+                product_information.setVisibility(rs.getInt("visibility"));
                 
                 product_information.setSubcategories_subcatID(rs.getInt("subcategories_subcatID"));
                 product_information.setProducts_productID(rs.getInt("products_productID"));
@@ -95,6 +96,7 @@ public class ProductInformationDao {
                 product_information.setInStock(rs.getInt("inStock"));
                 product_information.setCreatedDate(rs.getDate("createdDate"));
                 product_information.setLastEdited(rs.getDate("lastEdited"));
+                product_information.setVisibility(rs.getInt("visibility"));
                 
                 product_information.setSubcategories_subcatID(rs.getInt("subcategories_subcatID"));
                 product_information.setProducts_productID(rs.getInt("products_productID"));
@@ -132,6 +134,7 @@ public class ProductInformationDao {
                 product_information.setProductDescription(rs.getString("productDescription"));
                 product_information.setProductPrice(rs.getBigDecimal("productPrice"));
                 product_information.setInStock(rs.getInt("inStock"));
+                product_information.setVisibility(rs.getInt("visibility"));
                 product_information.setCreatedDate(rs.getDate("createdDate"));
                 product_information.setLastEdited(rs.getDate("lastEdited"));
                 
@@ -234,6 +237,7 @@ public class ProductInformationDao {
                 product_information.setProductDescription(rs.getString("productDescription"));
                 product_information.setProductPrice(rs.getBigDecimal("productPrice"));
                 product_information.setInStock(rs.getInt("inStock"));
+                product_information.setVisibility(rs.getInt("visibility"));
                 product_information.setCreatedDate(rs.getDate("createdDate"));
                 product_information.setLastEdited(rs.getDate("lastEdited"));
                 

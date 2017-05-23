@@ -19,6 +19,7 @@ public class Product_Information {
     private String productDescription;
     private BigDecimal productPrice;
     private int inStock;
+    private int visibility;
     private Date createdDate ;
     private Date lastEdited;
     private int subcategories_subcatID;
@@ -29,6 +30,14 @@ public class Product_Information {
     private int categoriescatID;
     private String catName;
     private String catDescription;
+
+    public int getVisibility() {
+        return visibility;
+    }
+
+    public void setVisibility(int visibility) {
+        this.visibility = visibility;
+    }
     
     
     
@@ -212,6 +221,7 @@ public class Product_Information {
                   ", productDescription=" + productDescription+ 
                   ", productPrice=" + productPrice+ 
                   ", inStock=" + inStock+ 
+                  ", visibility=" + visibility+ 
                   ", createdDate=" + createdDate+ 
                   ", lastEdited=" + lastEdited+ 
                   ", subcategories_subcatID=" + subcategories_subcatID+ 

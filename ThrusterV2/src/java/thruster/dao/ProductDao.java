@@ -62,7 +62,7 @@ public class ProductDao {
             // Parameters start with 1
             preparedStatement.setInt(1, productId);
             preparedStatement.executeUpdate();
-            System.out.println("Product Deleted.");
+            System.out.println("Product Deleted");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -138,6 +138,40 @@ public class ProductDao {
         }
 
         return product;
+    }
+     
+     
+     public void setInStock(int productID, int inStock) {
+        try {
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement("update products set "
+                            + "inStock=?, "
+                            + "where productid=?");
+            // Parameters start with 1
+            preparedStatement.setInt(1, inStock);
+            preparedStatement.setInt(2, productID);
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+     
+     
+    public void setVisibility(int productID, int inStock) {
+        try {
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement("update products set "
+                            + "visibility=?, "
+                            + "where productid=?");
+            // Parameters start with 1
+            preparedStatement.setInt(1, inStock);
+            preparedStatement.setInt(2, productID);
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
     
     

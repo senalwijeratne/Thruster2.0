@@ -251,10 +251,14 @@
                         <td><fmt:formatDate pattern="yyyy-MMM-dd" value="${product.lastEdited}" /></td>
                         <td><c:out value="${product.inStock}" /></td>  
                         <td><a href="ProductController?action=delete&productID=<c:out value="${product.productID}"/>"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">clear</i></a></td>
-                        <td><a href="ProductController?action=edit&productID=<c:out value="${product.productID}"/>"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">mode_edit</i></a></td>
+                        <td><a href="ProductController?action=delete&productID=<c:out value="${product.productID}"/>"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">clear</i></a></td>
+                        
+                        <td><a href="ProductController?action=toggleVisibility&productID=<c:out value="${product.productID}"/>"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">Toggle Visibility</a></td>
+                        <td><a href="ProductController?action=toggleInStock&productID=<c:out value="${product.productID}"/>"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">Toggle InStock</a></td>
+
                         <td><a href="#popup3"  class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons">file_upload</i></a></td>
                     </tr>
-                   </c:forEach>
+                </c:forEach>
               
               </tbody>
             </table>

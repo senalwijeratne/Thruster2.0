@@ -98,15 +98,23 @@ public class ProductController extends HttpServlet {
             request.setAttribute("products", dao.getAllProducts());
         }
         
+        
+        // TOGGLES THE VISIBILITY
         else if(action.equalsIgnoreCase("listProducts")){
             
-            forward = VIEW_PRODUCTS;
-            request.setAttribute("allProductInfo", dao.getAllProductInformation());
+            int visibility;
+            int productID;
+            
+           forward = LIST_PRODUCTS;
+            request.setAttribute("products", dao.getAllProducts());
         // TOGGLES THE INSTOCK     
         }else if(action.equalsIgnoreCase("listProducts")){
             
-            forward = VIEW_PRODUCTS;
-            request.setAttribute("allProductInfo", dao.getAllProductInformation());
+            int inStock;
+            int productID;
+            
+            forward = LIST_PRODUCTS;
+            request.setAttribute("products", dao.getAllProducts());
             
         } 
 //        else if (action.equalsIgnoreCase("searchProducts")){

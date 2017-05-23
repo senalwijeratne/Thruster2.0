@@ -19,14 +19,13 @@
         <a href ="Login/login.jsp"> LogIn</a>
         <a href ="ProductController?action=listProduct"> List Products</a>
         <a href ="ProductInformationController?action=listProducts"> List All Products</a>
-        <a href ="Product_SubcategoriesController?action=listProduct_Subcategories"> List Product subcategories</a>
+        <a href ="Product_SubcategoriesController?action=listProduct_Subcategories"> List Product sub categories</a>
         <a href ="Purchase_detailsController?action=listPurchase_details"> List purchase Details</a>
         <a href ="PurchasesController?action=listPurchases"> List Purchases</a>
         <a href ="ShoppingCartController?action=listProduct"> List Shopping Cart</a>
         <a href ="SubCategoriesController?action=listsubCategories"> List Sub_Categories</a>
         <a href ="UserController?action=listUser"> List Users</a>
         <a href ="ProductInformationController?action=searchProducts"> Search </a>
-        <a href ="Login/registertest.html"> Register </a>
-        
+        <a href ="Login/registertest.html"> Register </a>       
     </body>
 </html>
