@@ -5,3 +5,6 @@ ThrusterV2/nbproject/private/private\.properties
 *.properties
 
 *.jar
+/ThrusterV2 - Copy/build/
+/ThrusterV2 - Copy/dist/
+/ThrusterV2 - Copy/nbproject/private/
